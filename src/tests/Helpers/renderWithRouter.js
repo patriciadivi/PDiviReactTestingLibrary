@@ -6,7 +6,12 @@ import { render } from '@testing-library/react';
 const renderWithRouter = (componentRouter) => {
   const history = createMemoryHistory();
   return ({
-    ...render(<Router history={history}>{componentRouter}</Router>), history,
+    ...render(
+      <Router history={ history }>
+        {componentRouter}
+      </Router>,
+    ),
+    history,
   });
 };
 export default renderWithRouter;
