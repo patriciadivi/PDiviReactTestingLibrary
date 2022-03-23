@@ -4,7 +4,7 @@ import { screen } from '@testing-library/react';
 import renderWithRouter from './Helpers/renderWithRouter';
 import App from '../App';
 
-describe('', () => {
+describe('Testando a Página FAVORITE POKEMONS', () => {
   test('Teste se é exibido na tela a mensagem No favorite pokemon found',
     () => {
       const { history } = renderWithRouter(<App />);
